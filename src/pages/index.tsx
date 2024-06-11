@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import axios from "axios";
+import Link from "next/link";
 
 export default function Home() {
   const [data, setData] = useState("");
@@ -40,7 +41,7 @@ export default function Home() {
         <title>Binary Search Tree Solver</title>
       </Head>
       <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-        <h1 className="text-2xl font-bold mb-4">Binary Search Tree Solver</h1>
+        <Link href="https://github.com/dannynotsmart/bst-solver"><h1 className="text-2xl font-bold mb-4">Binary Search Tree Solver</h1></Link>
         <input
           type="text"
           className="w-full max-w-md p-2 border border-gray-300 rounded mb-4"
